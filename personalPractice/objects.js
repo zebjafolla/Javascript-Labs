@@ -188,6 +188,16 @@ function min(num1, num2, num3){
 
 // Write a function called add that takes two numbers as arguments and returns their sum. Then, write a second function called subtract that takes two numbers as arguments and returns their difference. The subtract function should use the add function to calculate the result. For example, the call subtract(5, 3) should return 2, because 5 - 3 = 2.
 
+function add(num1, num2){
+    return num1 + num2;
+}
+    
+function subtract(num1, num2){
+        return num1 - num2;
+    }
+
+console.log(`The result of the subtraction is ${subtract(6, 5)}, while the result of the addition is ${add(6, 5)}.`);
+
 // Exercise 2
 
 // Write a function called isPrime that takes a number as an argument and returns true if the number is prime, and false if the number is not prime. A prime number is a number that is divisible only by 1 and itself. To determine whether a number is prime, the isPrime function should call a second function called isDivisible that takes two numbers as arguments and returns true if the first number is divisible by the second number, and false otherwise. The isPrime function should use the isDivisible function to determine whether the given number is prime. For example, the call isPrime(7) should return true, because 7 is a prime number, and the call isPrime(6) should return false, because 6 is not a prime number.
