@@ -196,7 +196,7 @@ function subtract(num1, num2){
         return num1 - num2;
     }
 
-console.log(`The result of the subtraction is ${subtract(6, 5)}, while the result of the addition is ${add(6, 5)}.`);
+//console.log(`The result of the subtraction is ${subtract(6, 5)}, while the result of the addition is ${add(6, 5)}.`);
 
 // Exercise 2
 
@@ -205,4 +205,9 @@ console.log(`The result of the subtraction is ${subtract(6, 5)}, while the resul
 // Exercise 3
 
 // Write a function called getArea that takes the radius of a circle as an argument and returns the area of the circle. The getArea function should call a second function called square that takes a number as an argument and returns the square of that number. The getArea function should use the square function to calculate the area of the circle. The formula for the area of a circle is π * radius^2, where π is a constant that approximately equals 3.14. For example, the call getArea(2) should return 12.56, because π * 2^2 = 12.56.
+
+var name = "mad";
+name += " ";
+name += "hatter";
+console.log(name);
 
