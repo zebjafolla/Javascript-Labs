@@ -1,0 +1,77 @@
+<!-- Create a simple HTML page with a button that says "Open Window".
+
+In your JavaScript file, add an event listener to the button that opens a new window when the button is clicked. You can do this using the window.open method.
+
+In the same JavaScript file, write a function that takes in a message and a color, and changes the background color of the second opened window to the provided color.
+
+Add another button to the HTML page that says "Change Color".
+
+In your JavaScript file, add an event listener to the "Change Color" button that calls the function you wrote in step 3 with a message and a color of your choice.
+
+Test your code by opening the HTML page in your browser, clicking the "Open Window" button, and then clicking the "Change Color" button in the original window. The second opened window should change its background color. -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="changeColor()">Change Color</button> 
+    <script>
+        var windowNum2;
+        function openWindow()
+        {
+            windownum2 = window.open();
+        }
+        var message = prompt("Please type a message here", "");
+        var color = prompt("please type a color here", "");
+        function takesIn(message, color)
+        {
+            windowNum2.document.body.style.backgroundColor = color;
+            windowNum2.document.body.innerHTML = message;
+        }
+        function changeColor(message, color)
+        {
+            takesIn(message, color);
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="changeColor()">Change Color</button> 
+    <script>
+        var windowNum2;
+        function openWindow()
+        {
+            windownum2 = window.open("", "", "width=400,height=400");
+        }
+        function takesIn(message, color)
+        {
+            windowNum2.document.body.style.backgroundColor = color;
+            windowNum2.document.body.innerHTML = message;
+        }
+        function changeColor()
+        {
+            var message = prompt("Please type a message here", "");
+            var color = prompt("please type a color here", "");
+            takesIn(message, color);
+        }
+    </script>
+</body>
+</html>

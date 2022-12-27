@@ -13,5 +13,19 @@
 </head>
 <body>
     <h1>Hello!</h1>
+    <script type="text/javascript">
+        var color = "red";
+    
+        function whatIsThis() {
+            var color = "blue";
+            alert(this);
+            alert(document.whatIsThis().this.color);
+        }
+        whatIsThis();
+    </script>
 </body>
 </html>
+
+//
+
+

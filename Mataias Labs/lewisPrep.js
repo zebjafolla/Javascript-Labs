@@ -103,7 +103,7 @@ else if (jasonGrade < 79 && jasonGrade >= 70){
 else if (jasonGrade < 70 && jasonGrade >= 60){
     console.log(names[4] + " " + gradeChart[3]);
 }
-else
+else if 
 {
     console.log(names[4] + " " + gradeChart[4]);    
 }

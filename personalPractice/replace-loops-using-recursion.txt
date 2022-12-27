@@ -1,0 +1,21 @@
+function sum(arr, n) {
+  // Only change code below this line
+//1st iteration: n === 3
+  if (n <= 0)
+  {
+    return 0;
+  }
+  else
+  {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+
+  // Only change code above this line
+}
+//arr = [1, 2, 3, 4, 5]
+//n = 3
+
+
+//2nd iteration: n === 2
+//3rd iteration: n === 1
+//4th iteration: n === 0
