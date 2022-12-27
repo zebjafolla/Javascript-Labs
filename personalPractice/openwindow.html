@@ -54,23 +54,16 @@ Test your code by opening the HTML page in your browser, clicking the "Open Wind
 </head>
 <body>
     <button onclick="openWindow()">Open Window</button>
-    <button onclick="changeColor()">Change Color</button> 
+    <button onclick="changeColor(windowNum2)">Change Color</button> 
     <script>
-        var windowNum2;
         function openWindow()
         {
-            windownum2 = window.open("", "", "width=400,height=400");
+            var windowNum2 = window.open("openwindow.html", "2nd window", "width=400,height=400");
         }
-        function takesIn(message, color)
+        function changeColor(windowNum2)
         {
-            windowNum2.document.body.style.backgroundColor = color;
-            windowNum2.document.body.innerHTML = message;
-        }
-        function changeColor()
-        {
-            var message = prompt("Please type a message here", "");
-            var color = prompt("please type a color here", "");
-            takesIn(message, color);
+            windowNum2.document.body.innerHTML = prompt("Please type a message here", "");
+            windowNum2.document.body.style.backgroundColor = prompt("please enter a color", "");
         }
     </script>
 </body>
