@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="takesIn()">Change Color</button> 
+    <script>
+        var windowNum2;
+        function openWindow()
+        {
+            windowNum2 = window.open("", "", "width=400,height=400");
+        }
+        function takesIn()
+        {
+            var message = prompt("Please type a message here", "");
+            var color = prompt("please type a color here", "");
+            windowNum2.document.body.style.backgroundColor = color;
+            windowNum2.document.body.innerHTML = message;
+        }
+    </script>
+</body>
+</html>
