@@ -1,0 +1,98 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("backgroundweather.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'serif', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container_app{
+    min-height:100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .4));
+    display:flex;
+    flex-direction: column;
+}
+
+.location_header{
+    border: 0;
+    outline: 0;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 10%;
+}   
+
+.content_location_header{
+    border: 0;
+    outline: 0;
+    padding: 5px 10px;
+    width: 40%;
+    max-width:45%;
+    height: 40px;
+    border-radius: 15px 2px 15px 2px;
+    border-bottom: solid;
+    border-color:black;
+    transition: width 1s;
+    margin-bottom:15px;
+}
+
+.content_location_header:hover{
+    width: 42%;
+}
+
+.content_location_header:focus{
+    width: 42%;
+}
+
+.content_location_header:blur{
+    width: 42%;
+}
+
+.city_name{
+    color:white;
+    text-align:center;
+    font-size: 1.4rem;
+}
+
+.date{
+    color:white;
+    text-align:center;
+    margin:10px auto;
+}
+
+.degree{
+    color:white;
+    text-align:center;
+    margin: 10px auto;
+    font-size:5rem;
+    text-shadow: 2px 5px black;
+}
+
+.weather_type{
+    color:white;
+    text-align:center;
+    margin:10px auto;
+    font-size: 1.5rem;
+    text-shadow: 1px 2px black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.image{ 
+
+    /* cant tell if this works */
+}
+
+.hilo{
+    color:white;
+    text-align:center;
+    margin:10px auto;
+    font-size:2rem;
+}
+
