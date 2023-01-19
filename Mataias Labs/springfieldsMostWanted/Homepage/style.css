@@ -1,0 +1,120 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/homer-simpson-revised');
+
+body
+{
+    font-family: 'Homer Simpson Revised', sans-serif;
+    background: linear-gradient(to bottom, #66DCFFff, #6EBFFEff, #E1F5AEff, #E8372Fff, #FFE421ff, #FF9620ff, #40545Fff, #E1B988ff, #F0DEA5ff, #017ACAff);
+    background-repeat: no-repeat;
+    min-height:100vh;
+}
+
+
+.springfield_grid
+{
+    box-sizing:border-box;
+    display:flex;
+    flex-wrap: wrap;
+    color: #40545Fff;
+    justify-content:space-evenly;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.springfield_grid figure
+{
+    display:flex;
+    height:200px;
+    width: 300px;
+    /* border: #40545Fff solid; */
+    border-radius: 25px;
+    background-color: #66DCFFff;
+    box-shadow: 2px 2px 4px #FF9620ff;
+    
+}
+.springfield_grid figure:hover
+{
+    box-shadow: 0px 0px 10px #40545Fff;
+
+}
+
+.pic_div
+{
+    margin:0;
+    padding:0;
+    width:30%;
+    height:100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 0 20px;
+}
+
+
+
+.pic_div h3
+{
+    text-align:center;
+    font-size: xx-large;
+    margin-top:0;
+    width: 100%;
+    color:black;
+    overflow:hidden;
+    
+
+}
+
+
+
+.content
+{
+    line-height: 1;
+    font-size:16px;
+    margin-left:1px;
+    padding-left:5px;
+    padding-top:0;
+    padding-bottom: 5px;
+    background-color:#FFE421ff;
+    border-radius: 0 20px 20px 0;
+    width:100%;
+}
+
+.name
+{
+    font-size:1.2rem;
+}
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+
+.bart
+{
+    background-image: url("../Images/bart.jpg");
+}
+
+.moe
+{
+    background-image: url("../Images/moe.png");
+}
+.lisa
+{
+    background-image: url("../Images/lisa.png");
+}
+.homer
+{
+    background-image: url("../Images/homesnitch.png");
+}
+.marge
+{
+    background-image: url("../Images/marge.jpeg");
+}
+.ralph
+{
+    background-image: url("../Images/ralph.jpeg");
+}
+
