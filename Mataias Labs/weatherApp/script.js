@@ -19,6 +19,7 @@ const api = {
             .then((response) => 
             {
                 return response.json();
+                
             })
             .then((response) => 
             {
@@ -41,12 +42,11 @@ const api = {
                     deepai.setApiKey('b5ed524e-6a52-4af8-81d7-12aa2bf6ffa7');
                     (async function() {
                     var resp = await deepai.callStandardApi("text2img", {
-                        text: `${res[0].name}, ${res[0].country}`,
+                        text: `${res[0].name}, ${res[0].country}, ${response.weather.main}`,
                         grid_size: "1",
                     });
                     document.body.style.backgroundImage = `url(${resp.output_url})`;
                     })()
-                    
                 })
                 return response;
             })
@@ -85,10 +85,6 @@ function displayResults(info){
 
     let hilo = document.querySelector('.hilo');
     hilo.innerText = `Hi: ${Math.round(info.main.temp_max)}° | Lo: ${Math.round(info.main.temp_min)}°`;
-
-
-    
-
 }
 
 
